@@ -1,9 +1,9 @@
 
 ## New Reveal.js Theme
 
-### Brief of Summary
-The website is a reveal.js theme that it has different styles from the original reveal.js theme.
-This template has a background image, logo image, and specific font
+### Brief Summary
+The website is a reveal.js theme that it has different # black theme style from the original reveal.js theme.
+This template has a background image, logo image, and specific font.
 
 ### The difference between the original theme and this theme
 - Background image: an image appears in all slides as a background, this template used this background
@@ -17,7 +17,7 @@ The entry point is index.html file, this file calls black.css style file
 So you can change every style appears in the website from black.css file. Path of the file is css/theme/black.css
 
 ##### Change Background Image
-Right now inside class ```body``` you can change style that it appears in whole slides, so background image has changed inside.
+Right now inside class ```body``` of black.css, I added the following three lines.
 
 ```js
  body {
@@ -33,14 +33,14 @@ Right now inside class ```body``` you can change style that it appears in whole 
 ##### Change Logo Image
 
 There is ``` body:after``` class, this tag used to add another image on the background image, so you can add logo image inside.
-About the change logo placement, you can use ```top, down, left, and right``` then add the distance you want the logo to go away from
+About the change logo placement, you can use ```top, bottom, left, and right``` then add the distance you want.
 
 ```js
-body:after {
+body: after {
   content: url('./pepsi-logo-1.png');
-position: fixed;
-top: '0.5em';
-left: '3.5em';
+  position: fixed;
+  top: '0.5em';
+  left: '3.5em';
  }
 ```
 
@@ -60,15 +60,15 @@ OR
 - Add the link inside ```index.html``` file between link tag
 
 
-Also font has changed inside ```reveal``` class and every tag related to reveal class like ```.reveal h1,.reveal h2```, etc..
+Also font should be changed inside ```reveal``` class and every tag related to reveal class like ```.reveal h1,.reveal h2```, etc..
 
-Inside these classes you can change font size, font weight, font type and font color. this style will apply on each slide in a theme
+Inside these classes you can change font size, font weight, font type and font color. this style will be applied on every slide.
 
 ```js
 .reveal {
   font-family: 'Annie Use Your Telescope', cursive;
   color: #e0dbd1;
-  font-size: 42px;
+  font-size: '42px';
   font-weight: normal;
 }
 .reveal h1,
