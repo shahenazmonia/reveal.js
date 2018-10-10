@@ -19,7 +19,7 @@ So you can change every style appears in the website from black.css file. Path o
 ##### Change Background Image
 Right now inside class ```body``` of black.css, I added the following three lines.
 
-```js
+```css
  body {
   background-repeat:no-repeat;
   background-size: cover;
@@ -35,12 +35,12 @@ Right now inside class ```body``` of black.css, I added the following three line
 There is ``` body:after``` class, this tag used to add another image on the background image, so you can add logo image inside.
 About the change logo placement, you can use ```top, bottom, left, and right``` then add the distance you want.
 
-```js
+```css
 body: after {
   content: url('./pepsi-logo-1.png');
   position: fixed;
-  top: '0.5em';
-  left: '3.5em';
+  top: 0.5em;
+  left: 3.5em;
  }
 ```
 
@@ -49,7 +49,7 @@ body: after {
 - Add the downloaded font inside theme folder
 - Call the font inside black.css file
 
-```js
+```css
 @font-face{
   font-family: 'Annie Use Your Telescope';
   src: url("./AnnieUseYourTelescope-Regular.ttf");
@@ -64,11 +64,11 @@ Also font should be changed inside ```reveal``` class and every tag related to r
 
 Inside these classes you can change font size, font weight, font type and font color. this style will be applied on every slide.
 
-```js
+```css
 .reveal {
   font-family: 'Annie Use Your Telescope', cursive;
   color: #e0dbd1;
-  font-size: '42px';
+  font-size: 42px;
   font-weight: normal;
 }
 .reveal h1,
