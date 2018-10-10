@@ -39,8 +39,8 @@ About the change logo placement, you can use ```top, down, left, and right``` th
 body:after {
   content: url('./pepsi-logo-1.png');
 position: fixed;
-top: 0.5em;
-left: 3.5em;
+top: '0.5em';
+left: '3.5em';
  }
 ```
 
